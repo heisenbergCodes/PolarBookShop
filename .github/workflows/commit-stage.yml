@@ -33,4 +33,4 @@ jobs:
       - name: Build, unit tests and integration tests
         run: |
           chmod +x mvnw
-          ./mvn clean install
+          mvn clean install
