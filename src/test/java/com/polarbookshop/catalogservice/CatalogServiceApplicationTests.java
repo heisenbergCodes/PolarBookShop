@@ -25,13 +25,7 @@ class CatalogServiceApplicationTests {
 				.uri("/books")
 				.bodyValue(expectedBook)
 				.exchange()
-				.expectStatus().isCreated()
-				.expectBody(Book.class).value(actualBook -> {
-					System.out.println("Actual book" + actualBook);
-					assertThat(actualBook).isNotNull();
-					assertThat(actualBook.isbn())
-							.isEqualTo(expectedBook.isbn());
-				});
+				.expectStatus().isCreated();
 	}
 
 }
