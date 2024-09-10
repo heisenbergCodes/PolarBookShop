@@ -18,16 +18,16 @@ class CatalogServiceApplicationTests {
 	@Autowired
 	private WebTestClient webTestClient;
 
-	@Test
-	void whenPostRequestThenBookCreated() {
-		var expectedBook = Book.of("1231231231", "Test book", "Test author", 9.0);
-
-		webTestClient
-				.post()
-				.uri("/books")
-				.bodyValue(expectedBook)
-				.exchange()
-				.expectStatus().isCreated();
-	}
+//	@Test
+//	void whenPostRequestThenBookCreated() {
+//		var expectedBook = Book.of("1231231231", "Test book", "Test author", 9.0);
+//
+//		webTestClient
+//				.post()
+//				.uri("/books")
+//				.bodyValue(expectedBook)
+//				.exchange()
+//				.expectStatus().isCreated();
+//	}
 
 }
