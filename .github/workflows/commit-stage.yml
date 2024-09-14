@@ -3,7 +3,7 @@ on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: heisenbergCodes/catalog-service
+  IMAGE_NAME: heisenbergcodes/catalog-service
   VERSION: latest
 
 jobs:
